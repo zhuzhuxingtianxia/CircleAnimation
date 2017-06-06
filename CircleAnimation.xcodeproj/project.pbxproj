@@ -35,6 +35,8 @@
 		B6BFB37E1EDEA23C00E90C3B /* TestRing1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BFB37D1EDEA23C00E90C3B /* TestRing1.swift */; };
 		B6C6ED691EE67068008EAA5D /* TestRing9.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C6ED681EE67068008EAA5D /* TestRing9.swift */; };
 		B6C6ED6B1EE6707D008EAA5D /* Test9Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C6ED6A1EE6707D008EAA5D /* Test9Controller.swift */; };
+		B6C6ED771EE696B5008EAA5D /* ArcController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C6ED761EE696B5008EAA5D /* ArcController.swift */; };
+		B6C6ED791EE696C8008EAA5D /* BgArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C6ED781EE696C8008EAA5D /* BgArcView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		B6BFB37D1EDEA23C00E90C3B /* TestRing1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRing1.swift; sourceTree = "<group>"; };
 		B6C6ED681EE67068008EAA5D /* TestRing9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRing9.swift; sourceTree = "<group>"; };
 		B6C6ED6A1EE6707D008EAA5D /* Test9Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test9Controller.swift; sourceTree = "<group>"; };
+		B6C6ED761EE696B5008EAA5D /* ArcController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcController.swift; sourceTree = "<group>"; };
+		B6C6ED781EE696C8008EAA5D /* BgArcView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BgArcView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,9 +156,11 @@
 				B68BA82C1EE648AC00905A5E /* Test8Controller.swift */,
 				B6C6ED6A1EE6707D008EAA5D /* Test9Controller.swift */,
 				B68BA8081EE13FE000905A5E /* RingController.swift */,
+				B6C6ED761EE696B5008EAA5D /* ArcController.swift */,
 				B600A9CA1ED925CD00A6CE83 /* Main.storyboard */,
 				B600A9CD1ED925CD00A6CE83 /* Assets.xcassets */,
 				B600A9F61ED9283200A6CE83 /* RingView.swift */,
+				B6C6ED781EE696C8008EAA5D /* BgArcView.swift */,
 				B6BFB37D1EDEA23C00E90C3B /* TestRing1.swift */,
 				B68BA8161EE54C4300905A5E /* TestRing2.swift */,
 				B68BA8181EE54C7400905A5E /* TestRing3.swift */,
@@ -330,8 +336,10 @@
 				B68BA81B1EE54CB200905A5E /* TestRing4.swift in Sources */,
 				B68BA8071EE13ED900905A5E /* Test1Controller.swift in Sources */,
 				B68BA80B1EE14DF400905A5E /* BaseController.swift in Sources */,
+				B6C6ED771EE696B5008EAA5D /* ArcController.swift in Sources */,
 				B6C6ED6B1EE6707D008EAA5D /* Test9Controller.swift in Sources */,
 				B68BA8171EE54C4300905A5E /* TestRing2.swift in Sources */,
+				B6C6ED791EE696C8008EAA5D /* BgArcView.swift in Sources */,
 				B600A9C91ED925CD00A6CE83 /* ViewController.swift in Sources */,
 				B68BA8191EE54C7400905A5E /* TestRing3.swift in Sources */,
 				B68BA81D1EE54CCD00905A5E /* Test4Controller.swift in Sources */,

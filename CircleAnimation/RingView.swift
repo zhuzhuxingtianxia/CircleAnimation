@@ -7,15 +7,10 @@
 //
 
 import UIKit
-public enum CircularType: Int {
-    case circularRing   = 0 //圆环
-    case circularRadian  = 1  //圆弧
-    
-}
+
 
 class RingView: UIView {
 
-    public var circularType = CircularType.circularRing
     //默认环宽
     public var ringWidth:CGFloat = 10.0
     //默认环色
@@ -108,7 +103,7 @@ class RingView: UIView {
 
 //****动画圆环*****//
 
-class RadianView: UIView{
+private class RadianView: UIView{
     
     public var ringWidth:CGFloat = 0.0 {
         didSet{

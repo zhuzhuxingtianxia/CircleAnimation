@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    fileprivate let dataArray:Array = ["弧形","扇形","环形","环形过滤","梯度效果","多梯度效果","梯度环形(效果不好)","Layer梯度","Layer环梯度","梯度环形优化"]
+    fileprivate let dataArray:Array = ["弧形","扇形","环形","环形过滤","梯度效果","多梯度效果","梯度环形(效果不好)","Layer梯度","Layer环梯度","梯度环形优化","支付宝运动步数"]
     
     private lazy var tabelView:UITableView = {
         let table:UITableView = UITableView.init(frame: self.view.frame, style: .plain)
@@ -76,6 +76,8 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
             test1 = Test9Controller()
         case 9:
             test1 = RingController()
+        case 10:
+            test1 = ArcController()
         default: break
             
         }
