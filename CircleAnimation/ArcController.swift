@@ -21,7 +21,7 @@ class ArcController: BaseController {
         
         arcView.center = view.center
         arcView.backgroundColor = UIColor.white
-        arcView.stepNumber = 2000 + NSInteger(arc4random()%2000)
+        arcView.stepNumber = NSInteger(arc4random()%10000)
         view.addSubview(arcView)
     }
     

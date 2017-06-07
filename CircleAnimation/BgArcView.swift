@@ -34,12 +34,17 @@ class BgArcView: UIView {
             UserDefaults.standard.set(NSNumber.init(value: stepNumber) , forKey: "stepNumber")
             
             
-            let millis:Int = Int(2.0 * 1000.0 / totalProgress)
+            let millis:Int = Int(1.0 * 1000.0 / totalProgress)
             customTimerSource(milliseconds: millis)
             
-            //从减去一百的地方开始累加
-            arcView.step = stepNumber - 100
-            let milliseconds:Int = 2*1000/100
+            //从减去一最高位的地方开始累加
+            let random = reduceNumber(aNumber: stepNumber)
+            
+            guard stepNumber > 0 else {
+                return
+            }
+            arcView.step = stepNumber - random!
+            let milliseconds:Int = 1*1000/random!
             textTimerSource(milliseconds: milliseconds)
         }
     }
@@ -109,6 +114,29 @@ class BgArcView: UIView {
     
     required  init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func reduceNumber(aNumber:NSInteger) -> NSInteger? {
+        let strNumber = String(aNumber)
+        let len = strNumber.characters.count
+        if len < 3 {
+            return 1
+        }else{
+            var string:String = "1"
+            if strNumber.hasPrefix("1") {
+                for _ in 0..<(len - 2) {
+                  string = string.appending("0")
+                }
+            }else{
+                for _ in 0..<(len - 1) {
+                   string = string.appending("0")
+                }
+            }
+            
+            
+            return NSInteger(string)
+        }
+        
     }
     
     //定时器
@@ -200,6 +228,8 @@ class BgArcView: UIView {
             setNeedsDisplay()
         }
     }
+    //颜色数组
+    public var colors:Array = [UIColor.yellow.cgColor,UIColor.orange.cgColor]
 
     public var ringWidth:CGFloat = 0.0 {
         didSet{
@@ -211,6 +241,8 @@ class BgArcView: UIView {
         label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textColor = UIColor.red
         label.textAlignment = NSTextAlignment.center
+        label.sizeToFit()
+        label.text = "--"
         return label
     }()
     
@@ -267,7 +299,7 @@ class BgArcView: UIView {
         //梯度1
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         
-        let backgroundColors1 = [UIColor.yellow.cgColor,UIColor.orange.cgColor];
+        let backgroundColors1 = colors
         
         let backgroudColorLocations1:[CGFloat] = [0.2, 0.8]
         let backgroundGradient1 = CGGradient.init(colorsSpace: colorSpace, colors: backgroundColors1 as CFArray, locations: backgroudColorLocations1)
