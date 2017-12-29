@@ -6,3 +6,9 @@
 
 ## 效果展示2
 ![image](https://github.com/zhuzhuxingtianxia/CircleAnimation/blob/master/%E5%BD%95%E5%B1%8F6.gif)
+
+## 效果展示3
+![img](https://github.com/zhuzhuxingtianxia/CircleAnimation/blob/master/%E5%BD%95%E5%B1%8F3.gif)
+
+## 效果展示4
+![img](https://github.com/zhuzhuxingtianxia/CircleAnimation/blob/master/%E5%BD%95%E5%B1%8F3.gif)
