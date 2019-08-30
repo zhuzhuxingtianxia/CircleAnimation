@@ -34,7 +34,7 @@ class BaseController: UIViewController {
         view.addSubview(btn)
         
         //垂直方向调整
-        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-top-[btn]", options: NSLayoutFormatOptions.alignAllLeft, metrics: ["top": 80], views: ["btn":btn]))
+        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-top-[btn]", options: NSLayoutFormatOptions.alignAllLeft, metrics: ["top": 44+44], views: ["btn":btn]))
         //设置水平宽度
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[btn(100)]", options: NSLayoutFormatOptions.alignAllLeft, metrics: nil, views: ["btn":btn]))
         //设置水平居中
