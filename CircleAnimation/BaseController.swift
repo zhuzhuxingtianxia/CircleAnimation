@@ -34,14 +34,14 @@ class BaseController: UIViewController {
         view.addSubview(btn)
         
         //垂直方向调整
-        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-top-[btn]", options: NSLayoutFormatOptions.alignAllLeft, metrics: ["top": 44+44], views: ["btn":btn]))
+        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-top-[btn]", options: NSLayoutConstraint.FormatOptions.alignAllLeft, metrics: ["top": 44+44], views: ["btn":btn]))
         //设置水平宽度
-        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[btn(100)]", options: NSLayoutFormatOptions.alignAllLeft, metrics: nil, views: ["btn":btn]))
+        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[btn(100)]", options: NSLayoutConstraint.FormatOptions.alignAllLeft, metrics: nil, views: ["btn":btn]))
         //设置水平居中
-        view.addConstraint(NSLayoutConstraint.init(item: btn, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: view, attribute: NSLayoutAttribute.centerX, multiplier: 1.0, constant: 0))
+        view.addConstraint(NSLayoutConstraint.init(item: btn, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: view, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1.0, constant: 0))
     }
     
-    func drawRingClick(sender: UIButton){
+    @objc func drawRingClick(sender: UIButton){
         
     }
 

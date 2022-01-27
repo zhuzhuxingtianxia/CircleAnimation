@@ -66,8 +66,8 @@ class BgArcView: UIView {
         let prLayer = CAShapeLayer.init()
         prLayer.fillColor = UIColor.clear.cgColor
         prLayer.strokeColor = UIColor.white.cgColor
-        prLayer.fillRule = kCAFillRuleEvenOdd
-        prLayer.lineCap = kCALineCapRound
+        prLayer.fillRule = CAShapeLayerFillRule.evenOdd
+        prLayer.lineCap = CAShapeLayerLineCap.round
         prLayer.lineWidth = 10
         prLayer.opacity = 1
 
@@ -118,7 +118,7 @@ class BgArcView: UIView {
     
     private func reduceNumber(aNumber:NSInteger) -> NSInteger? {
         let strNumber = String(aNumber)
-        let len = strNumber.characters.count
+        let len = strNumber.count
         if len < 3 {
             return 1
         }else{

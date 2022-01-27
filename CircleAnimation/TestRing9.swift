@@ -68,8 +68,8 @@ class TestRing9: UIView {
         prLayer.frame = self.bounds
         prLayer.fillColor = UIColor.clear.cgColor
         prLayer.strokeColor = UIColor.white.cgColor
-        prLayer.fillRule = kCAFillRuleEvenOdd
-        prLayer.lineCap = kCALineCapRound
+        prLayer.fillRule = CAShapeLayerFillRule.evenOdd
+        prLayer.lineCap = CAShapeLayerLineCap.round
         prLayer.lineWidth = self.lineW
         prLayer.opacity = 1
         
